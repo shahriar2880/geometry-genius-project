@@ -23,7 +23,7 @@
           <!-- Triangle card -->
           <div class="card rounded-none bg-base-100 w-full shadow-xl">
             <figure>
-              <img class="w-full h-56" src="images/triangle.png" alt="Shoes" />
+              <img class="w-96 h-52" src="images/triangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Tringle</h2>
@@ -53,7 +53,7 @@
           <!-- Rectangle card -->
           <div class="card rounded-none bg-base-100 w-full shadow-xl">
             <figure>
-              <img class="w-full h-56" src="images/rectangle.png" alt="Shoes" />
+              <img class="w-96 h-52" src="images/rectangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Rectangle</h2>
@@ -84,7 +84,7 @@
           <!-- Parallelogram card -->
           <div class="card rounded-none bg-base-100 w-full shadow-xl">
             <figure>
-              <img class="w-full h-56" src="images/parallelogram.png" alt="Shoes" />
+              <img class="w-96 h-52" src="images/parallelogram.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Parallelogram</h2>
@@ -114,7 +114,7 @@
           <!-- Rhombus card -->
           <div class="card rounded-none bg-base-100 w-full shadow-xl">
             <figure>
-              <img class="w-full h-56" src="images/rhombus.png" alt="Shoes" />
+              <img class="w-96 h-52" src="images/rhombus.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Rhombus</h2>
@@ -141,19 +141,19 @@
           <!-- Pentagon card -->
           <div class="card rounded-none bg-base-100 w-full shadow-xl">
             <figure>
-              <img class="w-full h-56" src="images/pentagon.png" alt="Shoes" />
+              <img class="w-96 h-52" src="images/pentagon.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Pentagon</h2>
               <p>Area (A) = 0.5 * p * b</p>
               <div>
-                <input
+                <input id="pentagon-perimeter"
                   class="w-24 text-xl p-2 rounded-sm"
                   type="text"
                   placeholder="p"
                 />
                 <span>cm</span>
-                <input
+                <input id="pentagon-base"
                   class="w-24 text-xl p-2 rounded-sm"
                   type="text"
                   placeholder="b"
@@ -161,34 +161,34 @@
                 <span>cm</span>
               </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
           <!-- ellipse card -->
           <div class="card rounded-none bg-base-100 w-full shadow-xl">
             <figure>
-              <img class="w-full h-56" src="images/ellipse.png" alt="Shoes" />
+              <img class="w-96 h-52" src="images/ellipse.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Ellipse</h2>
               <p>Area (A) = 3.1416 * a * b</p>
               <div>
-                <input
+                <input id="ellipse-distance1"
                   class="w-24 text-xl p-2 rounded-sm"
                   type="text"
                   placeholder="a"
                 />
                 <span>cm</span>
-                <input
+                <input id="ellipse-distance2"
                   class="w-24 text-xl p-2 rounded-sm"
                   type="text"
-                  placeholder="b"
+                  placeholder="a"
                 />
                 <span>cm</span>
               </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
