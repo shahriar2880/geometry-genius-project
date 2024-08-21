@@ -23,7 +23,7 @@
           <!-- Triangle card -->
           <div class="card rounded-none bg-base-100 w-full shadow-xl">
             <figure>
-              <img class="w-full" src="images/triangle.png" alt="Shoes" />
+              <img class="w-full h-56" src="images/triangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Tringle</h2>
@@ -53,7 +53,7 @@
           <!-- Rectangle card -->
           <div class="card rounded-none bg-base-100 w-full shadow-xl">
             <figure>
-              <img class="w-full" src="images/rectangle.png" alt="Shoes" />
+              <img class="w-full h-56" src="images/rectangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Rectangle</h2>
@@ -84,7 +84,7 @@
           <!-- Parallelogram card -->
           <div class="card rounded-none bg-base-100 w-full shadow-xl">
             <figure>
-              <img class="w-full" src="images/parallelogram.png" alt="Shoes" />
+              <img class="w-full h-56" src="images/parallelogram.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Parallelogram</h2>
@@ -114,19 +114,19 @@
           <!-- Rhombus card -->
           <div class="card rounded-none bg-base-100 w-full shadow-xl">
             <figure>
-              <img class="w-full" src="images/rhombus.png" alt="Shoes" />
+              <img class="w-full h-56" src="images/rhombus.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Rhombus</h2>
               <p>Area (A) = 0.5 * d<sub>1</sub> *d<sub>2</sub></p>
               <div>
-                <input
+                <input id="rhombus-distance1"
                   class="w-24 text-xl p-2 rounded-sm"
                   type="text"
                   placeholder="d1"
                 />
                 <span>cm</span>
-                <input
+                <input id="rhombus-distance2"
                   class="w-24 text-xl p-2 rounded-sm"
                   type="text"
                   placeholder="d2"
@@ -134,14 +134,14 @@
                 <span>cm</span>
               </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
           <!-- Pentagon card -->
           <div class="card rounded-none bg-base-100 w-full shadow-xl">
             <figure>
-              <img class="w-full" src="images/pentagon.png" alt="Shoes" />
+              <img class="w-full h-56" src="images/pentagon.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Pentagon</h2>
@@ -168,7 +168,7 @@
           <!-- ellipse card -->
           <div class="card rounded-none bg-base-100 w-full shadow-xl">
             <figure>
-              <img class="w-full" src="images/ellipse.png" alt="Shoes" />
+              <img class="w-full h-56" src="images/ellipse.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Ellipse</h2>
@@ -202,5 +202,6 @@
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
     <script src="scripts/parallelogram-calculator.js"></script>
+    <script src="scripts/rhombus-calculate.js"></script>
   </body>
 </html>
