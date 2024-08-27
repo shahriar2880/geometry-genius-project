@@ -20,6 +20,7 @@ function getInputvalueById(inputFieldId){
     return inputValue;
 }
 
+
 function setInnerTextById(elementId, area){
     const element = document.getElementById(elementId);
     element.innerText = area;
