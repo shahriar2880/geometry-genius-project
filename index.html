@@ -141,6 +141,66 @@
               </div>
             </div>
           </div>
+          <!-- Pentagon card -->
+          <div class="card rounded-none bg-base-100 w-full shadow-xl">
+            <figure>
+              <img class="w-96 h-52" src="images/pentagon.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Pentagon</h2>
+              <p>Area (A) = 0.5 * p * b</p>
+              <div>
+                <input id="pentagon-perimeter"
+                  class="w-24 text-xl p-2 rounded-sm"
+                  type="text"
+                  placeholder="p"
+                />
+                <span>cm</span>
+                <input id="pentagon-base"
+                  class="w-24 text-xl p-2 rounded-sm"
+                  type="text"
+                  placeholder="b"
+                />
+                <span>cm</span>
+              </div>
+              <div>
+                <p class="text-2xl">Area: <span id="pentagon-area">0</span><span>cm<sup>2</sup></span></p>
+              </div>
+              <div class="card-actions">
+                <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- ellipse card -->
+          <div class="card rounded-none bg-base-100 w-full shadow-xl">
+            <figure>
+              <img class="w-96 h-52" src="images/ellipse.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Ellipse</h2>
+              <p>Area (A) = 3.1416 * a * b</p>
+              <div>
+                <input id="ellipse-distance1"
+                  class="w-24 text-xl p-2 rounded-sm"
+                  type="text"
+                  placeholder="a"
+                />
+                <span>cm</span>
+                <input id="ellipse-distance2"
+                  class="w-24 text-xl p-2 rounded-sm"
+                  type="text"
+                  placeholder="a"
+                />
+                <span>cm</span>
+              </div>
+              <div>
+                <p class="text-2xl">Area: <span id="ellipse-area">0</span><span>cm<sup>2</sup></span></p>
+              </div>
+              <div class="card-actions">
+                <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- area calculation container -->
         <div class="sm:w-full md:w-80 lg:w-96 ml-2 border border-gray-700 rounded-md">
@@ -152,5 +212,6 @@
     <script src="scripts/rectangle-calculate.js"></script>
     <script src="scripts/parallelogram-calculator.js"></script>
     <script src="scripts/rhombus-calculate.js"></script>
+    <script src="scripts/pentagon-calculator.js"></script>
   </body>
 </html>
