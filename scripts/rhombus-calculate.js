@@ -1,16 +1,19 @@
 function calculateRhombusArea(){
-    // console.log('Rhombus')
-    const rhombusBaseInput = document.getElementById('rhombus-distance1');
-    const rhombusBaseText = rhombusBaseInput.value;
-    const Base = parseFloat(rhombusBaseText);
-    const rhombusheightInput = document.getElementById('rhombus-distance2');
-    const rhombusheightText = rhombusheightInput.value;
-    const height = parseFloat(rhombusheightText)
-    
-    const area = Base*height ;
-    console.log('Area of rhombus is:', area);
+    const distance1 = getInputvalueById('rhombus-distance1')
+    const distance2 = getInputvalueById('rhombus-distance2')
+    const area = 0.5 * distance1 * distance2 ;
+    setInnerTextById('rhombus-area', area) ;
+}
 
-    //display triangle area
-    const rhombusAreaSpan = document.getElementById('rhombus-area');
-    rhombusAreaSpan.innerText = area;
+
+function getInputvalueById(inputFieldId){
+    const inputField = document.getElementById(inputFieldId);
+    const inputValueText = inputField.value;
+    const inputValue = parseFloat(inputValueText);
+    return inputValue;
+}
+
+function setInnerTextById(elementId, area){
+    const element = document.getElementById(elementId);
+    element.innerText = area;
 }
